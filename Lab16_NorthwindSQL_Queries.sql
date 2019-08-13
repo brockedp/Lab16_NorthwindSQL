@@ -1,3 +1,4 @@
+use Northwind
 -- 1.
 SELECT * FROM Customers;
 
@@ -46,7 +47,7 @@ Group By OrderID;
 Select customerID from Orders Where OrderID = '10290';
 
 -- 14.
-SELECT Orders.OrderID, Customers.ContactName, Orders.OrderDate FROM Orders
+SELECT * FROM Orders
 INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 SELECT * FROM ORDERS LEFT JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 SELECT * FROM ORDERS RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID
